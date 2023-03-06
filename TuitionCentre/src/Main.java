@@ -38,14 +38,14 @@ public class Main
             case 1:
                 // set specific address and headmaster/headmistress
                 TuitionCentre centre1 = new TuitionCentre("D-05, Jalan Kiara, Mont Kiara","Mr.Badrul", numStud);
-                // printout tuition centre details
+                // printout tuition centre details (Location, Headmaster/headmistress, Teachers Available and Students Registered)
                 System.out.println("\nReport Details.");
                 System.out.println("Tuition Centre: " + centre1.getAddress());
                 System.out.println("Headmaster: " + centre1.getHeadmaster());
                 System.out.println("Teachers Assigned: " + centre1.getDTeachers());
 
-                ArrayList<Student> studentList = studData.getstudentList();
-                System.out.println("Students Registered: " + studentList);
+                ArrayList<String> studentList1 = studData.getstudentList();
+                System.out.println("Students Registered: " + studentList1);
                 break;
             case 2:
                 TuitionCentre centre2 = new TuitionCentre("No.12, Jalan Rampai 2, Medan Niaga Rampai", "Mr. Azri", numStud);
@@ -54,6 +54,9 @@ public class Main
                 System.out.println("Tuition Centre: " + centre2.getAddress());
                 System.out.println("Headmaster: " + centre2.getHeadmaster());
                 System.out.println("Teachers Assigned: " + centre2.getDTeachers());
+
+                ArrayList<String> studentList2 = studData.getstudentList();
+                System.out.println("Students Registered: " + studentList2);
                 break;
             case 3:
                 TuitionCentre centre3 = new TuitionCentre("6, Jalan Indah 1, Taman Bukit Indah", "Mr. Ah Chong", numStud);
@@ -62,6 +65,9 @@ public class Main
                 System.out.println("Tuition Centre: " + centre3.getAddress());
                 System.out.println("Headmaster: " + centre3.getHeadmaster());
                 System.out.println("Teachers Assigned: " + centre3.getDTeachers());
+
+                ArrayList<String> studentList3 = studData.getstudentList();
+                System.out.println("Students Registered: " + studentList3);
                 break;
             case 4:
                 TuitionCentre centre4 = new TuitionCentre("37-01, Jalan Molek 1/5A, Taman Molek", "Mrs. Aliah", numStud);
@@ -70,6 +76,9 @@ public class Main
                 System.out.println("Tuition Centre: " + centre4.getAddress());
                 System.out.println("Headmaster: " + centre4.getHeadmaster());
                 System.out.println("Teachers Assigned: " + centre4.getDTeachers());
+
+                ArrayList<String> studentList4 = studData.getstudentList();
+                System.out.println("Students Registered: " + studentList4);
                 break;
             default:
                 System.out.println("Error! Please choose tuition centre between 1-4");

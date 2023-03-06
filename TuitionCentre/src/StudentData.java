@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class StudentData {
     public String sName, sIC, sAddress, sSchoolName = " "; //initialize strings
     Scanner input = new Scanner(System.in);
-    private ArrayList<Student> studentList = new ArrayList<>(); // create arraylist for students
+    private ArrayList<String> studentList = new ArrayList<>(); // create arraylist for students
 
     // function call for input data for students registered
     public void inputSData(int numStud) {
@@ -20,7 +20,7 @@ public class StudentData {
 
             // add data to Student class and add to StudentList
             Student student = new Student(sName, sIC, sAddress, sSchoolName);
-            studentList.add(student);
+            studentList.add(student.getName());
 
             // Record marks for the students subjects
             System.out.println("\nEnter Student " + num + " marks for 5 subjects.");
@@ -45,7 +45,7 @@ public class StudentData {
         }
 
     }
-    public ArrayList<Student> getstudentList(){
+    public ArrayList<String> getstudentList(){
         return studentList;
     }
 

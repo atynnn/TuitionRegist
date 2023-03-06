@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 public class TeacherData {
-    private ArrayList<Teacher> teachers;
+    private ArrayList<String> teachers;
     public String tName, tIC, tAddress, tQualify, dateJoin = " ";
     public int yearsEx, yearsCentre = 0;
 
@@ -27,11 +27,11 @@ public class TeacherData {
 
             // add data to Teacher class and add to teachers
             Teacher teacher = new Teacher(tName, tIC, tAddress, tQualify, dateJoin, yearsEx, yearsCentre);
-            teachers.add(teacher);
+            teachers.add(teacher.getTName());
         }
     }
 
-    public ArrayList<Teacher> getTeachers() {
+    public ArrayList<String> getTeachers() {
         return teachers;
     }
 

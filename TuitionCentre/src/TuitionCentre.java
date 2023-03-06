@@ -5,7 +5,7 @@ import java.util.*;
 public class TuitionCentre {
     private String address;
     private String headmaster;
-    private ArrayList<Teacher> teachers;
+    private ArrayList<String> teachers;
 
     //constructor public
     TuitionCentre(String address, String headmaster, int numT) {
@@ -13,7 +13,7 @@ public class TuitionCentre {
         TeacherData tData = new TeacherData();
         tData.inputTData(numT);
 
-        ArrayList<Teacher> teachers = tData.getTeachers();
+        ArrayList<String> teachers = tData.getTeachers();
 
         this.address = address;
         this.headmaster = headmaster;
@@ -21,7 +21,7 @@ public class TuitionCentre {
     }
 
     //getters and setters
-    public ArrayList<Teacher> getDTeachers() {
+    public ArrayList<String> getDTeachers() {
         return teachers;
     }
     public String getAddress() {
